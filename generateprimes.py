@@ -4,27 +4,26 @@ from math import sqrt
 def nextprime(number): 
 	"This function will find the smallest prime larger than the current number"
 	potential= number
-	j=2
+	j=3
 	while j<=sqrt(potential):
         	if potential%j:
-			j=j+1
+			j=j+2
 		else:
 			#print "not prime"
-			potential=potential +1
-			j=2
+			potential=potential +2
+			j=3
 			continue
 	#print potential
 	return potential 
-number =4  
+number =3
 rawstop = raw_input('I want to find all the prime numbers below ')
 stop = int(rawstop)
 print 2
-print 3
 while number < stop:
 	number = nextprime(number) 
 	if number<stop: 
 		print number  
-	number= number +1 #would changing the one to a two allow me to skip testing even numbers? yes, now its faster 
+	number= number +2
 	continue 
 	number = nextprime(number)
 print "done"
