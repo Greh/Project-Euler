@@ -5,7 +5,7 @@ def nextprime(number):
 	"This function will find the smallest prime larger than the current number"
 	potential=number
 	j=2
-	while j<=sqrt(potential): #this doesn't work because j changes but sqrt(potential)is unaffected by the loop, so it will stop when a larger numbers first prime is greater than the sqrt of the starting number  
+	while j<=sqrt(potential): 
 	        if potential%j: #not divisible by j 
 			#print "j", j #for debugging 
 			j=j+1
