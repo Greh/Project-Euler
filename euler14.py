@@ -13,10 +13,18 @@ def collatz_step(x):
 		memo[x]=collatz_step(3*x +1) +1 
 	return memo[x] 
 #and here is pseudo code that Bart helped me write 
-start=int(raw_input('enter an integer and press enter '))
+longest=0
+winner=0
+for i in range (1, 1000000):
+	length=collatz_step(i)
+	if length>longest: 
+		winner= i 
+		longest=length
+		print winner 
+print winner 
 
-length=collatz_step(start)
-print length 
+#plan: shove the function in a for loop which also checks if its the largest and print it at the end 
+
 
 
 
