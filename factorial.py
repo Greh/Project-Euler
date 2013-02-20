@@ -4,8 +4,7 @@ def factorial(n):
 	if n==1: 
 		return 1
 	else:
-		n= n*int(factorial(n-1))
-	return n 
+		return n*int(factorial(n-1))
 
 start=int(raw_input("enter an integer and press enter ")) 
 end=factorial(start)
