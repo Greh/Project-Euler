@@ -2,7 +2,7 @@ print "seive of eratosthenes"
 from math import sqrt 
 end=raw_input("find all the primes below... ") 
 bucket = [];
-for i in xrange(0,int(end)):
+for i in range(0,int(end)):
     bucket.append(0);
 #print bucket
 j=2
