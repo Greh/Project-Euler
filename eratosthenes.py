@@ -1,5 +1,4 @@
 print "seive of eratosthenes"
-from math import sqrt 
 end=raw_input("find all the primes below... ") 
 bucket = [];
 for i in range(0,int(end)):
